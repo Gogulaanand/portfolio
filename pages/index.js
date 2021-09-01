@@ -13,6 +13,10 @@ export default function Home() {
 
       <main className="flex flex-col items-center justify-center w-4/5 flex-1 text-center relative">
         <Nav />
+        <div className="absolute top-0 mx-auto left-72 w-96 h-96 bg-purple-300 rounded-full opacity-70 mix-blend-multiply filter blur-2xl animate-blob delay-500"></div>
+        <div className="absolute top-0 mx-auto right-72 w-96 h-96 bg-yellow-300 rounded-full opacity-70 mix-blend-multiply filter blur-2xl animate-blob delay-1000"></div>
+        <div className="absolute top-32 mx-auto w-96 h-96 bg-pink-300 rounded-full opacity-70 mix-blend-multiply filter blur-2xl animate-blob delay-200"></div>
+
         <Image
           src="/profile.jpg"
           height={96}
