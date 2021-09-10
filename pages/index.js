@@ -1,82 +1,83 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Link from "next/link";
+import Nav from "@/components/index/nav";
+import Image from "next/image";
+import HomeMenu from "@/components/index/homeMenu";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen pt-2">
       <Head>
-        <title>Create Next App</title>
+        <title>Gogulaanand</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <main className="flex flex-col items-center justify-center w-4/5 flex-1 text-center relative mt-12">
+        <Nav />
+        <div className="absolute top-0 mx-auto left-72 w-96 h-96 bg-purple-300 rounded-full opacity-70 mix-blend-multiply filter blur-2xl animate-blob delay-500"></div>
+        <div className="absolute top-0 mx-auto right-72 w-96 h-96 bg-yellow-300 rounded-full opacity-70 mix-blend-multiply filter blur-2xl animate-blob delay-1000"></div>
+        <div className="absolute top-32 mx-auto w-96 h-96 bg-pink-300 rounded-full opacity-70 mix-blend-multiply filter blur-2xl animate-blob delay-200"></div>
+        <div className="mt-64 w-4/5">
+          <Image
+            src="/profile.jpg"
+            height={96}
+            width={96}
+            className="rounded-full my-2"
+          />
+          <h1 className="text-2xl font-semibold mt-4">HI, I'M GOGULAANAND</h1>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <p className="mt-6 text-3xl font-extralight w-3/5 text-center leading-10 tracking-wide mx-auto">
+            I specialize in frontend web development. <br />I love building
+            websites that allow people to immerse into the content and be
+            inspired.
+          </p>
+          <ul className="flex justify-center mt-14">
+            <li className="mx-8 text-red-400 leading-10 tracking-wide">
+              <Link href="https://github.com/Gogulaanand/" passHref>
+                <a target="_blank" rel="noreferrer">
+                  GITHUB
+                </a>
+              </Link>
+            </li>
+            <li className="mx-8 text-red-400 leading-10 tracking-wide">
+              <Link href="https://www.linkedin.com/in/gogulaanand/" passHref>
+                <a target="_blank" rel="noreferrer">
+                  LINKEDIN
+                </a>
+              </Link>
+            </li>
+            <li className="mx-8 text-red-400 leading-10 tracking-wide">
+              <Link href="https://twitter.com/Gogulaanand13" passHref>
+                <a target="_blank" rel="noreferrer">
+                  TWITTER
+                </a>
+              </Link>
+            </li>
+          </ul>
         </div>
+        <HomeMenu />
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
+      <footer className="flex flex-col items-center justify-between w-full h-24 py-4 border-t bg-black">
+        <div className="w-4/5 flex justify-between text-white">
+          <div>Socials</div>
+          <div>
+            <p className="text-sm hover:text-gray-400 cursor-pointer">
+              GOGULAANAND02@GMAIL.COM
+            </p>
+          </div>
+        </div>
+        <hr className="w-4/5" />
         <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          className="flex items-center justify-center text-gray-400 text-sm"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          @Gogulaanand Rammohan 2021
           <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
         </a>
       </footer>
     </div>
-  )
+  );
 }
