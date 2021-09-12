@@ -5,7 +5,7 @@ import Contact from "@/components/index/contact";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen pt-2">
+    <div className="flex flex-col items-center justify-center min-h-screen pt-2 mx-auto">
       <Head>
         <title>Gogulaanand</title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,7 +15,7 @@ export default function Home() {
         <Nav />
 
         <section className="flex flex-col items-start w-3/5">
-          <h1 className="text-left font-bold text-6xl leading-tight">
+          <h1 className="text-left font-bold text-4xl md:text-6xl leading-tight">
             A frontend developer passionate about building beautifully designed
             websites
           </h1>
