@@ -1,6 +1,6 @@
 # Portfolio of Gogulaanand-R
 
-Preview live on [gogulaanand.xyz](http://gogulaanand.xyz/):
+Preview live on [gogulaanand.vercel.app](https://gogulaanand.vercel.app):
 
 ## How to use
 
