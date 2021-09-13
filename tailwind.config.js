@@ -15,16 +15,16 @@ module.exports = {
       keyframes: {
         blob: {
           "0%, 100%": {
-            transform: "translate(0, 0) scale(1)",
+            transform: "translate(0, 0) rotate(90deg) scale(1)",
           },
           "25%": {
-            transform: "translate(20px, -40px) scale(1.1)",
+            transform: "translate(20px, -40px) rotate(135deg) scale(1.1)",
           },
           "50%": {
-            transform: "translate(0, 30px) scale(1)",
+            transform: "translate(0, 30px) rotate(45deg) scale(1)",
           },
           "75%": {
-            transform: "translate(-30px, -25px) scale(0.9)",
+            transform: "translate(-30px, -25px) rotate(90deg) scale(0.9)",
           },
         },
       },
