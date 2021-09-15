@@ -3,6 +3,23 @@ import Image from "next/image";
 import Contact from "@/components/contact";
 
 export default function About() {
+  const skills = [
+    { name: "HTML", logo: "html5" },
+    { name: "CSS", logo: "css3" },
+    { name: "JAVASCRIPT", logo: "javascript" },
+    { name: "TYPESCRIPT", logo: "typescript" },
+    { name: "REACT", logo: "react" },
+    { name: "NEXT.JS", logo: "nextdotjs" },
+    { name: "TAILWINDCSS", logo: "tailwindcss" },
+    { name: "JEST", logo: "jest" },
+    { name: "GRAPHQL", logo: "graphql" },
+    { name: "EXPRESS", logo: "express" },
+    { name: "MONGODB", logo: "mongodb" },
+    { name: "CI/CD", logo: "circleci" },
+    { name: "CMS", logo: "strapi" },
+    { name: "TECH WRITING", logo: "blogger" },
+  ];
+
   return (
     <>
       <main className="w-4/5 flex flex-col mx-auto">
@@ -35,20 +52,16 @@ export default function About() {
             </p>
           </section>
           <section className="w-full lg:w-2/6 flex flex-wrap justify-start">
-            <p className="skills">HTML</p>
-            <p className="skills">CSS</p>
-            <p className="skills">JAVASCRIPT</p>
-            <p className="skills">TYPESCRIPT</p>
-            <p className="skills">REACT</p>
-            <p className="skills">NEXT.JS</p>
-            <p className="skills">TAILWINDCSS</p>
-            <p className="skills">JEST</p>
-            <p className="skills">GRAPHQL</p>
-            <p className="skills">EXPRESS</p>
-            <p className="skills">MONGODB</p>
-            <p className="skills">CMS</p>
-            <p className="skills">CI/CD</p>
-            <p className="skills">TECH WRITING</p>
+            {skills.map((skill) => {
+              return (
+                <>
+                  <div className="skills flex">
+                    <p className="px-2">{skill.name}</p>
+                    <Image src={`/${skill.logo}.svg`} width={24} height={24} />
+                  </div>
+                </>
+              );
+            })}
           </section>
         </div>
       </main>
