@@ -57,7 +57,11 @@ export default function About() {
                 <>
                   <div className="skills flex">
                     <p className="px-2">{skill.name}</p>
-                    <Image src={`/${skill.logo}.svg`} width={24} height={24} />
+                    <Image
+                      src={`/skills/${skill.logo}.svg`}
+                      width={24}
+                      height={24}
+                    />
                   </div>
                 </>
               );
