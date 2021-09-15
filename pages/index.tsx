@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from 'next/image'
-import Nav from "@/components/index/nav";
-import Contact from "@/components/index/contact"
+import Image from "next/image";
+import Nav from "@/components/nav";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -11,7 +11,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="absolute -top-16 right-0 hidden lg:block">
-        <Image src="/blob.png" width={1000} height={1000} className="animate-blob mix-blend-multiply"/>
+        <Image
+          src="/blob.png"
+          width={1000}
+          height={1000}
+          className="animate-blob mix-blend-multiply"
+        />
       </div>
       <main className="flex flex-col items-center justify-center flex-1 text-center mt-12 min-h-screen max-h-screen">
         <Nav />
@@ -38,7 +43,6 @@ export default function Home() {
       </main>
       <Contact />
       <div className="h-screen"></div>
-      <footer className="flex flex-col items-center justify-between w-full h-24 py-4"></footer>
     </div>
   );
 }
