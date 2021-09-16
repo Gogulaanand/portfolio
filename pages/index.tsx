@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import Nav from "@/components/nav";
 import Contact from "@/components/contact";
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
         />
       </div>
       <main className="flex flex-col items-center justify-center flex-1 text-center mt-12 min-h-screen max-h-screen">
-        <Nav />
         <section className="flex flex-col items-start w-3/5 fade-in-bottom">
           <h1 className="text-left font-bold text-4xl md:text-6xl leading-tight">
             A frontend developer passionate about building beautifully designed
@@ -42,7 +40,6 @@ export default function Home() {
         </section>
       </main>
       <Contact />
-      <div className="h-screen"></div>
     </div>
   );
 }
