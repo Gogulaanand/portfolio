@@ -2,12 +2,12 @@ import React from "react";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <footer className="flex flex-col footer-font">
+    <footer className="flex flex-col footer-font text-xs lg:text-sm">
       <div className="flex items-center justify-between w-3/5 mx-auto h-24 py-4">
         <Link href="/" passHref>
           <a className="cursor-pointer">RG</a>
         </Link>
-        <div className="flex justify-between gap-8">
+        <div className="flex flex-col xl:flex-row justify-between gap-8">
           <Link href="https://github.com/Gogulaanand" passHref>
             <a>Github</a>
           </Link>
@@ -22,7 +22,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <p className="text-center mt-2 mb-8 text-sm">
+      <p className="text-center mt-2 mb-8">
         Copyright © 2021 Gogulaanand Rammohan. All rights reserved.
       </p>
     </footer>

@@ -55,7 +55,7 @@ export default function About() {
             {skills.map((skill) => {
               return (
                 <>
-                  <div className="skills flex">
+                  <div className="skills flex" key={skill.name}>
                     <p className="px-2">{skill.name}</p>
                     <Image
                       src={`/skills/${skill.logo}.svg`}
